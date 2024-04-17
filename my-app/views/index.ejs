@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entries List</title>
+  </head>
+  <body>
+    <h1>Entries</h1>
+    <ul>
+      <% entries.forEach(entry => { %>
+      <li><%= entry.data %></li>
+      <% }); %>
+    </ul>
+    <form action="/add-entry" method="post">
+      <input type="text" name="data" required />
+      <button type="submit">Add Entry</button>
+    </form>
+  </body>
+</html>
