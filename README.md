@@ -18,4 +18,4 @@ git clone https://github.com/chetanyb/csm-exp-8.git
 ./start.sh
 ```
 
-This will create a `.env` file aand ask for the database configuration if not already present. The script will also install the required dependencies and start the server at specified port.
+This will create a `.env` file aand ask for the database configuration if not already present. The script will also install the required dependencies and start the server at specified port or 3000 in case of any issues.
